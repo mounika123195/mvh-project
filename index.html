@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVH Restaurant Menu</title>
+  <style>
+    /* Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #111, #222);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+      background: #ffcc00;
+      color: #111;
+      animation: fadeInDown 1.2s ease-in-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .poster {
+      text-align: center;
+    }
+
+    .poster img {
+      width: 70%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+      transition: transform 0.5s;
+    }
+
+    .poster img:hover {
+      transform: scale(1.05);
+    }
+
+    .about {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .menu-card {
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+      transition: transform 0.4s, background 0.4s;
+      animation: zoomIn 1.2s ease-in-out;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-8px);
+      background: #292929;
+    }
+
+    .menu-card h2 {
+      color: #ffcc00;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .menu-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu-card li {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px dashed #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #aaa;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>MVH Restaurant</h1>
+    <p>Delicious Foods • Fresh Ingredients • Great Taste</p>
+  </header>
+
+  <!-- Poster Section -->
+  <section class="poster">
+    <img src="MVH restaurant.png" alt="MVH Restaurant Menu Poster">
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Our Restaurant</h2>
+    <p>
+      Welcome to <b>MVH Restaurant</b>, where taste meets quality!  
+      Our menu offers a variety of delicious main courses, refreshing beverages,  
+      and tempting appetizers prepared with the freshest ingredients.  
+      From sizzling cheeseburgers to refreshing lemon tea, we serve happiness on every plate.  
+    </p>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu">
+    <div class="menu-card">
+      <h2>Main Course</h2>
+      <ul>
+        <li><span>Cheeseburger</span><span>134</span></li>
+        <li><span>Cheese Sandwich</span><span>140</span></li>
+        <li><span>Chicken Burgers</span><span>199</span></li>
+        <li><span>Spicy Chicken</span><span>255</span></li>
+        <li><span>Hot Dog</span><span>160</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-card">
+      <h2>Appetizers</h2>
+      <ul>
+        <li><span>Fruit Salad</span><span>99</span></li>
+        <li><span>Cocktails</span><span>99</span></li>
+        <li><span>Nuggets</span><span>140</span></li>
+        <li><span>Sandwich</span><span>140</span></li>
+        <li><span>French Fries</span><span>100</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-card">
+      <h2>Beverages</h2>
+      <ul>
+        <li><span>Milk Shake</span><span>90</span></li>
+        <li><span>Iced Tea</span><span>100</span></li>
+        <li><span>Orange Juice</span><span>100</span></li>
+        <li><span>Lemon Tea</span><span>223</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>📞 +91 7386309494 | 🌐 www.mvhtastyfoods.com</p>
+    <p>© 2025 MVH Restaurant. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
